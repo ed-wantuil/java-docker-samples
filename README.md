@@ -19,7 +19,7 @@ To run this project, ensure you have the following installed:
 To initialize a PostgreSQL database in Docker, run the following command:
 
 ```
-docker run --name postgres-container -e POSTGRES_USER=ed-wantuil -e POSTGRES_PASSWORD=complex-password -e POSTGRES_DB=java-docker-sample -p 5432:5432 -d postgres
+docker compose up
 ```
 
 This will create a container named`postgres-container` with:
