@@ -18,14 +18,6 @@ To run this project, ensure you have the following installed:
 
 To run the project, you need to have a remote PostgreSQL configured or installed locally on your computer.
 
-This will create a container named `postgres-container` with:
-
-- **User**: `ed-wantuil`
-- **Password**: `complex-password`
-- **Database**: `java-docker-sample`
-
-PostgreSQL will be exposed on port `5432`.
-
 #### 2. Start the Spring Application Locally
 
 Once the database is up, start the Spring application locally:
