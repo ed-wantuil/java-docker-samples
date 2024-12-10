@@ -16,7 +16,19 @@ To run this project, ensure you have the following installed:
 
 #### 1. Postgres Connect
 
-To run the project, you need to have a remote PostgreSQL configured or installed locally on your computer.
+To initialize a PostgreSQL database in Docker, run the following command:
+
+```
+docker run --name postgres-container -e POSTGRES_USER=ed-wantuil -e POSTGRES_PASSWORD=complex-password -e POSTGRES_DB=java-docker-sample -p 5432:5432 -d postgres
+```
+
+This will create a container named`postgres-container` with:
+
+- **User**: `ed-wantuil`
+- **Password**: `complex-password`
+- **Database**: `java-docker-sample`
+
+PostgreSQL will be exposed on port `5432`.
 
 #### 2. Start the Spring Application Locally
 
