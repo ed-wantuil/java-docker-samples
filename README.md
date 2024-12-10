@@ -19,7 +19,7 @@ To run this project, ensure you have the following installed:
 To initialize a PostgreSQL database in Docker, run the following command:
 
 ```
-docker compose up
+docker compose -f docker/docker-compose.yml up
 ```
 
 This will create a container named`postgres-container` with:

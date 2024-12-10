@@ -10,3 +10,5 @@ services:
       POSTGRES_DB: java-docker-sample
     ports:
       - "5432:5432"
+    volumes:
+      - ./postgres-init:/docker-entrypoint-initdb.d
