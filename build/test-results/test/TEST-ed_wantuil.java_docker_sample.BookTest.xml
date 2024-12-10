@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ed_wantuil.java_docker_sample.BookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-10T16:38:12" hostname="Eds-MacBook-Air.local" time="0.874">
+  <properties/>
+  <testcase name="createBookTest()" classname="ed_wantuil.java_docker_sample.BookTest" time="0.874"/>
+  <system-out><![CDATA[13:38:10.955 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ed_wantuil.java_docker_sample.BookTest]: BookTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:38:10.998 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ed_wantuil.java_docker_sample.Application for test class ed_wantuil.java_docker_sample.BookTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2024-12-10T13:38:11.158-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] ed_wantuil.java_docker_sample.BookTest   : Starting BookTest using Java 21.0.5 with PID 53385 (started by edwantuil in /Users/edwantuil/workspace/ed-wantuil/java-docker-samples)
+2024-12-10T13:38:11.158-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] ed_wantuil.java_docker_sample.BookTest   : The following 1 profile is active: "test"
+2024-12-10T13:38:11.431-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-10T13:38:11.450-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2024-12-10T13:38:11.634-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-12-10T13:38:11.641-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T13:38:11.641-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T13:38:11.666-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-10T13:38:11.667-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 429 ms
+2024-12-10T13:38:11.679-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-10T13:38:11.747-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ED-WANTUIL
+2024-12-10T13:38:11.748-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-10T13:38:11.752-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-10T13:38:11.818-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-10T13:38:11.846-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-10T13:38:11.860-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-10T13:38:11.957-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-10T13:38:11.977-03:00  WARN 53385 --- [java-docker-sample] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-10T13:38:11.979-03:00  WARN 53385 --- [java-docker-sample] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-10T13:38:11.985-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-10T13:38:12.302-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table if exists loan add constraint FK88c0ydlo57pcgp137tntrgqx1 foreign key (book_id) references book
+Hibernate: alter table if exists loan add constraint FKskvlv9lnj3plivn0grmqf950f foreign key (member_id) references member
+2024-12-10T13:38:12.319-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-10T13:38:12.410-03:00  WARN 53385 --- [java-docker-sample] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-10T13:38:12.612-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 61693 (http) with context path '/'
+2024-12-10T13:38:12.616-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] ed_wantuil.java_docker_sample.BookTest   : Started BookTest in 1.567 seconds (process running for 1.981)
+2024-12-10T13:38:13.224-03:00  INFO 53385 --- [java-docker-sample] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10T13:38:13.224-03:00  INFO 53385 --- [java-docker-sample] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-10T13:38:13.225-03:00  INFO 53385 --- [java-docker-sample] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: insert into book (author,genre,isbn,status,title,id) values (?,?,?,?,?,?)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/edwantuil/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.10/e8eb255b2c378b9a6c7341e7b0e12f0a5636377/byte-buddy-agent-1.15.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

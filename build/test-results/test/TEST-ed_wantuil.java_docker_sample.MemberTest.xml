@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ed_wantuil.java_docker_sample.MemberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-10T16:38:13" hostname="Eds-MacBook-Air.local" time="0.025">
+  <properties/>
+  <testcase name="createBookTest()" classname="ed_wantuil.java_docker_sample.MemberTest" time="0.025"/>
+  <system-out><![CDATA[2024-12-10T13:38:13.619-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [ed_wantuil.java_docker_sample.MemberTest]: MemberTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-10T13:38:13.621-03:00  INFO 53385 --- [java-docker-sample] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration ed_wantuil.java_docker_sample.Application for test class ed_wantuil.java_docker_sample.MemberTest
+Hibernate: insert into member (address,email,name,phone,id) values (?,?,?,?,?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
