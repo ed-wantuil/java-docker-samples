@@ -1,0 +1,29 @@
+name: Run test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Gradle Build
+        run: ./gradlew build -x test --no-daemon
+
+      - name: Run Tests
+        run: ./gradlew test --no-daemon --info
