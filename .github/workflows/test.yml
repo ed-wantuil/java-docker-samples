@@ -8,9 +8,9 @@ on:
     branches:
       - main
 
-job:
+jobs:
   test:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -22,8 +22,8 @@ job:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Gradle build
+      - name: Gradle Build
         run: ./gradlew build -x test --no-daemon
 
-      - name: Run tests
-        run: ./gradlew test --no-daemon
+      - name: Run Tests
+        run: ./gradlew test --no-daemon --info
