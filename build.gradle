@@ -20,6 +20,7 @@ repositories {
 ext {
 	set('springCloudVersion', "2024.0.0")
 	set('lombokVersion', '1.18.36')
+	set('testcontainersVersion', '1.20.4')
 }
 
 dependencies {
@@ -37,6 +38,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.cloud:spring-cloud-starter-contract-stub-runner'
 	testImplementation 'io.rest-assured:rest-assured:5.3.0'
+	testImplementation "org.testcontainers:testcontainers:${testcontainersVersion}"
+	testImplementation "org.testcontainers:postgresql:${testcontainersVersion}"
+	testImplementation "org.testcontainers:junit-jupiter:${testcontainersVersion}"
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testRuntimeOnly 'com.h2database:h2'
 }
